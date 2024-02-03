@@ -1,0 +1,162 @@
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+<input type="radio" name="btn" id="controler-01" checked="checked">
+  <label for="controler-01"></label>
+<input type="radio" name="btn" id="controler-02">
+  <label for="controler-02"></label>
+<input type="radio" name="btn" id="controler-03">
+  <label for="controler-03"></label>
+<input type="radio" name="btn" id="controler-04">
+  <label for="controler-04"></label>
+<input type="radio" name="btn" id="controler-05">
+  <label for="controler-05"></label>
+  
+<section class="box-01">
+  <h1>Let's paint on love till our brushes grow </h1>
+</section>
+<section class="box-02">
+  <h1>For the canvas we share,  no perfect lines, no erasing is  allowed  </h1>
+</section>
+<section class="box-03">
+  <h1>Just the raw beauty of love, unfettered and proud </h1>
+</section>
+<section class="box-04">
+   <h1> <br>
+    Forget the Mona Lisa's smile,<br>
+The perfect brushstrokes<br>
+The poem I write,<br>
+Is not a masterpiece
+   </h1>
+  <img src="t (8).jpg">
+</section>
+<section class="box-05">
+  <h2>:}</h2>
+  <h2>Just  words for your muse   </h2><BR><BR>
+    <h2>Just simple words for your muse   </h2><BR><BR>
+  <h2><a href="Home.html" target="blank"> Next Page    </h2>
+ </section>
+
+
+ <style>
+    *,*:after,*:before{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+   box-sizing:border-box;
+}
+
+html, body, section{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+body h1{font-weight: 100; font-size: 5em;}
+a{color: #fff; text-decoration:none;}
+
+/*Controler*/
+input{display:none;}
+input + label{
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+  z-index: 999;
+}
+
+input:checked + label{background-color:#fff;}
+
+#controler-01 + label{top: 200px;}
+#controler-02 + label{top: 250px;}
+#controler-03 + label{top: 300px;}
+#controler-04 + label{top: 350px;}
+#controler-05 + label{top: 400px;}
+
+#controler-01:checked ~ section{
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+#controler-02:checked ~ section{
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+#controler-03:checked ~ section{
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+
+#controler-04:checked ~ section{
+  -webkit-transform: translateY(-300%);
+  -moz-transform: translateY(-300%);
+  transform: translateY(-300%);
+}
+
+#controler-05:checked ~ section{
+  -webkit-transform: translateY(-400%);
+  -moz-transform: translateY(-400%);
+  transform: translateY(-400%);
+}
+
+/*SECTION*/
+section{
+  -webkit-transition:all 0.8s ease;
+  -moz-transition:all 0.8s ease;
+  transition:all 0.8s ease;
+  text-align: center;
+}
+
+/*BOX 01*/
+.box-01{background-color: #e74c3c;}
+
+/*BOX-02*/
+.box-02{background-color: #3498db;}
+
+/*box 03*/
+.box-03{background-color:#2ecc71;}
+
+/*box-04*/
+.box-04{background-color: #34495e;}
+
+.box-04 h1{margin-bottom: 0;}
+
+.box-04 img{
+  width: 400px;
+  box-shadow: 5px 5px 0 #2c3e50;
+}
+
+/*box 05*/
+.box-05{
+  background-color:#1abc9c;
+  padding-top: 5em;
+}
+
+.box-05 h2{
+  font-weight: 100;
+  font-size: 3em;
+}
+
+.box-05 h2 a:hover{
+  border-bottom: 1px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+ </style>
